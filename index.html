@@ -1,326 +1,153 @@
-<!DOCIYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy & Beauty</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Tahoma, Arial, sans-serif;
-            background-color: #fffaf8;
-            color: #493b45;
-        }
-
-        header {
-            background-color: #8e5a82;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        header h1 {
-            margin-bottom: 10px;
-            font-size: 34px;
-        }
-
-        nav {
-            background-color: #f1e3ed;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            color: #704366;
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: bold;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 55px 20px;
-            background-color: #f8edf4;
-        }
-
-        .hero h2 {
-            color: #8e5a82;
-            font-size: 28px;
-        }
-
-        .hero p {
-            line-height: 2;
-        }
-
-        .services {
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        .cards {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            border: 1px solid #ead9e5;
-            border-radius: 15px;
-            padding: 22px;
-            width: 210px;
-            box-shadow: 0 3px 10px #0000000d;
-        }
-
-        .card {
-
-  .service-image {
-    display: block;
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin: 0 0 12px 0;
-}
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px #8e5a8230;
-}
-            color: #8e5a82;
-        }
-
-        .price {
-            font-weight: bold;
-            color: #8e5a82;
-        }
-
-        .contact {
-            text-align: center;
-            padding: 35px 15px;
-            background-color: #f1e3ed;
-        }
-
-        .contact a {
-            display: inline-block;
-            background-color: #8e5a82;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 25px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #8e5a82;
-            color: white;
-        }
-    </style>
-<style>
-  body {
-    background: #fff9f7;
-    color: #493744;
-    font-family: Arial, sans-serif;
-    line-height: 1.8;
-  }
-
-  header {
-    background: linear-gradient(135deg, #8e5a82, #c9a4bd);
-    color: white;
-    padding: 35px 20px;
-    text-align: center;
-    border-radius: 0 0 30px 30px;
-  }
-
-  h1, h2, h3 {
-    color: #8e5a82;
-  }
-
-  header h1 {
-    color: white;
-    font-size: 36px;
-  }
-
-  section {
-    padding: 25px 15px;
-  }
-
-  .card {
-    background: white;
-    border: 1px solid #ead9e5;
-    border-radius: 20px;
-    padding: 22px;
-    margin: 15px auto;
-    max-width: 600px;
-    box-shadow: 0 6px 20px #8e5a8218;
-  }
-
-  .card a, a.button {
-    display: inline-block;
-    background: #8e5a82;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-  }
-
-  .card a:hover, a.button:hover {
-    background: #68405f;
-  }
-
-  footer {
-    background: #f0e3ec;
-    color: #493744;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy & Beauty</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Tahoma, sans-serif;
+      background: #fffdfb;
+      color: #604252;
+      text-align: center;
+    }
+    header {
+      background: #f8f0e9;
+      padding: 20px;
+    }
+    h1, h2, h3 { color: #94677f; }
+    nav { padding: 15px; }
+    nav a {
+      color: #604252;
+      margin: 8px;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 50px 15px;
+      background: #ead6e0;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ead6e0;
+      border-radius: 15px;
+      padding: 15px;
+    }
+    .card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .price { font-weight: bold; color: #94677f; }
+    .btn {
+      display: inline-block;
+      background: #94677f;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin: 8px;
+    }
+    footer {
+      background: #604252;
+      color: white;
+      padding: 20px;
+    }
+  </style>
 </head>
-
 <body>
-
-    <header>
-        <h1>Healthy & Beauty</h1>
-        <p>جمالك يبدأ من هنا ✨</p>
-    </header>
-
+  <header>
+    <h1>Healthy & Beauty</h1>
+    <p>جمالك يستحق العناية 💗</p>
     <nav>
-        <a href="#home">الرئيسية</a>
-        <a href="#services">خدماتنا</a>
-        <a href="#contact">تواصلي معنا</a>
+      <a href="#home">الرئيسية</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#contact">تواصلي معنا</a>
     </nav>
+  </header>
 
-    <section class="hero" id="home">
-        <h2>أهلاً بيكي في Healthy & Beauty</h2>
-        <p>
-            مكانك المثالي للعناية بجمالك وأناقتك.
-            <br>
-            بنهتم بأدق التفاصيل علشان تكوني دايماً أجمل.
-        </p>
-    </section>
-<section style="text-align:center; padding:35px 20px;">
-    <h2 style="color:#8e5a82;">من نحن</h2>
-    <p style="line-height:2;">
-        Healthy & Beauty هو مركز متخصص في العناية بالجمال.
-        <br>
-        نقدم خدمات متنوعة للشعر والبشرة والأظافر
-        مع الاهتمام بالراحة والجودة.
-    </p>
-</section>
-<section style="text-align:center; padding:35px 20px; background:#fffaf8;">
-    <h2 style="color:#8e5a82;">من نحن 💗</h2>
-    <p style="line-height:2;">
-        أهلاً بيكي في Healthy & Beauty.
-        <br>
-        مكانك المثالي للعناية بجمالك وشعرك وبشرتك.
-        <br>
-        هدفنا إنك تستمتعي بتجربة جميلة ومميزة.
-    </p>
-</section><div style="text-align:center; padding:20px;">
-    <h2 style="color:#8e5a82;">جمالِك يستاهل الاهتمام ✨</h2>
-    <img
-        src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800"
-        alt="العناية بالشعر والجمال"
-        style="width:90%; max-width:500px; border-radius:20px;"
-    >
-    <p>اهتمي بنفسك، لأنك تستحقي الأفضل.</p>
-</div>
+  <section class="hero" id="home">
+    <h2>أهلًا بيكي في Healthy & Beauty</h2>
+    <p>عناية بجمالك وبشرتك وشعرك وأظافرك في مكان واحد.</p>
+    <a class="btn" href="#services">شوفي خدماتنا</a>
+  </section>
 
-    <section class="services" id="services">
-        <h2>خدماتنا وأسعارنا</h2>
+  <section id="services">
+    <h2>خدماتنا وأسعارنا</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="تنظيف البشرة">
+        <h3> تنظيف البشره العادي</h3>
+        <p class="price">300 جنيه</p>
+      </div>
+      <div class="card">
+        <img src="https://the-beautique.co.uk/beauty-academy/img/dermaplane-masterclass-training-norfolk.webp" alt="الديرما بلينك">
+        <h3>الديرما بلينك</h3>
+        <p>تقشير البشرة وإزالة الوبر.</p>
+        <p class="price">60 جنيه مع scrub</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=600&q=80" alt="تنظيف الشنب والحواجب">
+        <h3>تنظيف الشنب والحواجب</h3>
+        <p class="price">30 جنيه</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=80" alt="عناية بالبشرة">
+        <h3>جلسة عناية 12 خطوة</h3>
+        <p class="price">650 جنيه</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="قص الشعر">
+        <h3>قص أطراف الشعر</h3>
+        <p class="price">30 جنيه</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="تصفيف الشعر">
+        <h3>مكواة شعر قصير</h3>
+        <p class="price"> علي حسب طول شعره</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="تركيب أظافر">
+        <h3>تركيب أظافر</h3>
+        <p class="price">100 جنيه</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80" alt="سوفت جل">
+        <h3>سوفت جل</h3>
+        <p class="price">150 جنيه</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="مكواة شعر طويل">
+        <h3>مكواة شعر طويل</h3>
+        <p class="price">300 جنيه</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=600&q=80" alt="صبغة الشعر">
+        <h3>صبغة شعر</h3>
+        <p>السعر حسب طول الشعر واللون.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=600&q=80" alt="بروتين الشعر">
+        <h3>بروتين الشعر</h3>
+        <p>السعر حسب طول الشعر ونوع المنتج.</p>
+      </div>
+    </div>
+  </section>
 
-   
+  <section id="contact">
+    <h2>احجزي موعدك 💌</h2>
+    <p>تواصلي معانا لتأكيد السعر والموعد.</p>
+    <!-- غيّري الرقم التجريبي لرقم واتساب المركز قبل النشر -->
+    <a class="btn" href="https://wa.me/201014859356">احجزي على واتساب</a>
+  </section>
 
-            <div class="card">
-    <img
-        src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500"
-        alt="تنظيف البشرة"
-        class="service-image"
-    >
-    <h3>تنظيف البشرة</h3>
-    <p>عناية ونظافة لبشرتك.</p>
-    <p class="price">650 جنيه</p>
-</div>
-           
-
-            <div class="card">
-  <img src="https://the-beautique.co.uk/beauty-academy/img/dermaplane-masterclass-training-norfolk.webp"
-       alt="الديرما بلينك"
-       style="width:120px; height:90px; object-fit:cover; border-radius:12px;">
-
-  <h3>الديرما بلينك</h3>
-  <p>تقشير البشرة وإزالة الوبر للحصول على بشرة ناعمة ونضرة.</p>
-  <p>السعر: 80 جنيه</p>
-</div>
-
-            <div class="card"><img
-    src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=500"
-    alt="تصفيف الشعر"
-    class="service-image"
->
-
-                <h3>قص أطراف الشعر</h3>
-                <p>لإطلالة مرتبة وأنيقة.</p>
-                <p class="price">100 جنيه</p>
-            </div>
-
-            <div class="card">
-
-                <h3>تركيب أظافر</h3>
-                <p>اختاري اللوك اللي يناسبك.</p>
-                <p class="price">150 جنيه</p>
-            </div>
-
- <div class="card">
-  <h3>حجز بروتين الشعر</h3>
-  <p>احجزي موعدك لبروتين الشعر في Healthy & Beauty.</p>
-  <a href="https://wa.me/201014859356?text=عايزة%20أحجز%20بروتين%20الشعر">
-    احجزي بروتين 💜
-  </a>
-</div>
-
-<div class="card">
-  <h3>حجز صبغة الشعر</h3>
-  <p>اختاري لونك واحجزي موعد صبغة الشعر.</p>
-  <a href="https://wa.me/201012345678?text=عايزة%20أحجز%20صبغة%20الشعر">
-    احجزي صبغة 💜
-  </a>
-</div>       </div>
-  
-  <div class="card">
-  <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=style="width:100%; max-width:180px; height:130px; object-fit:cover; border-radius:15px;";">
-  <h3>الديرما بلينك</h3>
-  <p>تنظيف وتقشير البشرة للحصول على ملمس ناعم.</p>
-  <p>السعر:80 جنيه</p>
-</div>
-
-<div class="card">
-  <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600" alt="تركيب أظافر" style="width:100%; max-width:300px; height:200px; object-fit:cover; border-radius:15px;">
-  <h3>تركيب أظافر</h3>
-  <p>اختاري الشكل المناسب ليكي واحجزي موعدك.</p>
-  <p>السعر: 150 جنيه</p>
-</div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>احجزي موعدك الآن</h2>
-        <p>يسعدنا تواصلك معنا للاستفسار عن الخدمات.</p>
-<h2>خدماتنا</h2>
-
-       <a href="https://wa.me/201014859356?text=شكرالك علي%20تواصلك مع،%20هيلثي%20اند%20بيوتي"
-   target="_blank"
-   style="display:inline-block; background:#25D366; color:white;
-   padding:12px 25px; text-decoration:none; border-radius:25px;">
-     احجزي موعدك الان
-</a>        <p>طلخا-ميت الكرما</p>/p>/p>
-    </section>
-
-    <footer>
-        <p>© 2026 Healthy & Beauty - جميع الحقوق محفوظة</p>
-    </footer>
-
+  <footer>Healthy & Beauty — كل الجمال ليكي 💗</footer>
 </body>
 </html>
